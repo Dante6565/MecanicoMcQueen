@@ -40,3 +40,12 @@ function buscar()
         alert("No se encontro la palabra o oración buscada");
     }
 }
+
+function login (){
+    var user, pass;
+    user= document.getElementById("user_email").value;
+    pass= document.getElementById("password-toggle-input-88cd08fd").value;
+    if(user =="javgon@mec.cl" && pass=="1234"){
+        window.location="loginsucessmec.html"
+    }
+}

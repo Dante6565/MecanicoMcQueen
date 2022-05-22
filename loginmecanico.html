@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Iniciar sesion </title> 
+    <script>function login (){
+        var user, pass;
+        user= document.getElementById("user_email").value;
+        pass= document.getElementById("password").value;
+        if(user =="javier" && pass=="1234"||user=="gonzalo" && pass=="1234"||user=="rodrigo" && pass=="1234"){
+            window.location="loginsucessmec.html"
+        }
+    }</script>
 </head>
 <body>
     <div class="container">
@@ -21,10 +29,10 @@
                     <span class="title">Iniciar sesión</span>
                         <div class="input-field" id="login">
                             <label>Correo electronico</label>
-                            <input class="display-block width-full field string email required margin-bottom-6" autocorrect="off" aria-invalid="false" required="required" aria-required="true" type="email" value="" name="user[email]" id="user_email">                        </div>
+                            <input class="display-block width-full field string email required margin-bottom-6" autocorrect="off" aria-invalid="false" required="required" aria-required="true" type="email" value="" name="user[email]" id="user_email"></div>
                         <div class="input-field">
                             <label>Contrasenha</label>
-                            <input class="display-block width-full field password required password-toggle__input validated-field__input" id="password-toggle-input-88cd08fd" aria-invalid="false" aria-describedby="validated-field-error-d9a26354" required="required" aria-required="true" type="password" name="user[password]">
+                            <input class="display-block width-full field password required password-toggle__input validated-field__input" id="password" aria-invalid="false" aria-describedby="validated-field-error-d9a26354" required="required" aria-required="true" type="password" name="user[password]">
                         </div>
                             <div class="buttons">
                                 <div class="backBtn">
@@ -33,7 +41,7 @@
                                     </span>
                                 </div>
                                 <button class="sumbit">
-                                    <a href="loginsucessmec.html" span class="btnText">Aceptar</span>
+                                    <a span class="btnText" type="button" onclick="login()">Aceptar</span>
                                     <i class="uil uil-navigator"></i>
                                 </button>                   
                         </div>
@@ -42,7 +50,5 @@
             </div>
         </form>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
