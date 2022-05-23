@@ -18,13 +18,11 @@
       <a class="navbar-brand" href="#">Taller Macween</a>
           <form class="form-inline my-2 my-lg-0">
             <input id="barrabuscadora" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="search">
-            <button class="btn btn-outline-secondary mr-2 my-sm-0" type="button" onclick="buscar();">Buscar</button>
-          
-            <a href="login.html" button class="btn btn-outline-success mr-2 my-sm-0" type="submit">Iniciar sesión</button>
-            <a href="register.html" button class="btn btn-outline-success mr-2 my-sm-0" type="submit">Registrarse</button></a>     
+            <button class="btn btn-outline-secondary mr-2 my-sm-0" type="button" onclick="buscar();">Buscar</button>      
             <a href="formulario2.html" button class="btn btn-outline-success mr-2 my-sm-0" type="submit">Formulario de Atenciones </button></a>
-            <a href="formulario.html" button class="btn btn-outline-success mr-2 my-sm-0" type="submit">Contactanos</button></a>
-            <img src="Images/user.png" alt="user" class="regw">
+            <a href="formulariologueado.html" button class="btn btn-outline-success mr-2 my-sm-0" type="submit">Contactanos</button></a>
+            <a href="Ultimos Usuarios.html" button class="btn btn-outline-success mr-2 my-sm-0" type="submit">Ver ultimos registros</button></a>
+            <img src="Images/user.png" alt="register image" width="35px" class="site_left_img"> 
         </form>
     </nav>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -145,7 +143,16 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <div id="map"></div>
+      <script src="script.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(8, 224, 44, 0.226);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://www.instagram.com/mecanico/">Mecanica Mcqueen</a>
+      </div>
+    </footer>
     <script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

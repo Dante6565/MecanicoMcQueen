@@ -40,3 +40,24 @@ function buscar()
         alert("No se encontro la palabra o oración buscada");
     }
 }
+
+function login (){
+    var user, pass;
+    user= document.getElementById("user_email").value;
+    pass= document.getElementById("password-toggle-input-88cd08fd").value;
+    if(user =="javgon@mec.cl" && pass=="1234"){
+        window.location="loginsucessmec.html"
+    }
+}
+
+function iniciarMap(){
+    var coord = {lat:-33.433483 ,lng: -70.6695547};
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 10,
+      center: coord
+    });
+    var marker = new google.maps.Marker({
+      position: coord,
+      map: map
+    });
+}
