@@ -9,12 +9,16 @@
      
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/validationEngine.jquery.min.css"
+    integrity="sha256-dLfDnFtstI791pbYZLjLRY2JSQSoJ4t3Q3rw0cQLQr4=" crossorigin="anonymous" />
+
     <title>Registrate en chinchulines </title> 
 </head>
 <body>
     <div class="container">
         <header>Registrate!</header>
-        <form action="#">
+        <form id="registrarDatos" name="registrarDatos" action="#" method="post">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Datos personales</span>
@@ -22,16 +26,21 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Nombre Completo</label>
-                            <input type="text" placeholder="Ingresa tu nombre" required>
+                            <input type="text" placeholder="Ingresa tu nombre" class="validate[required]"
+                            data-errormessage-value-missing="El campo Nombre es obligatorio" value="" >
                         </div>
                         <div class="input-field">
                             <label>Correo electronico</label>
-                            <input type="text" placeholder="Ingresa tu correo" required>
+                            <input type="text" placeholder="Ingresa tu correo" class="validate[required,custom[email]]"
+                            data-errormessage-value-missing="El campo Correo es obligatorio"
+                            data-errormessage-custom-error="Formato: usuario@mail.com" value="">
                         </div>
                         
                         <div class="input-field">
                             <label>Contrasenha</label>
-                            <input for="text" placeholder="Ingresa tu clave" required>
+                            <input type="password" placeholder="Ingresa tu clave" class="validate[required,minSize[8]]"
+                            data-errormessage-value-missing="El campo contraseña es obligatorio" value=""
+                            data-errormessage-value-too-short ="La contraseña es demasiado insegura, por favor ponga una contraseña de al menos 8 caracteres">
                         </div>
                         <div class="input-field">
                             <label>Genero</label>
@@ -59,5 +68,19 @@
     </div>
 
     <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery-1.8.2.min.js"
+    integrity="sha256-8j1LMJtydDqor+H4yYols+4xJG+lcsZtnYyxmCyuT7w=" crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-es.min.js"
+    integrity="sha256-MeuxqxFPW1ASZACg9TcTHHIbkBuorhSxRvu2XZkDptM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js"
+    integrity="sha256-HbcATM0NJnF2rpBm+By+JrAikXdPlIujXNosIDzbllA=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('#registrarDatos').validationEngine();
+        });
+    </script>
 </body>
 </html>
