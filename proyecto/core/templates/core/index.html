@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Mecanica McQueen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Trucking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/mainStyles.css" />
+	<link rel='stylesheet' href='css/dscountdown.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<link href="css/lsb.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+		rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<script>
+		function login(){
+			var email, password;
+
+			email  = document.getElementById("email").value;
+			password = document.getElementById("password").value;
+			
+			if (email == "admin@admin.cl" && password == "123123"){
+				windows.location = "adminview.html";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="header">
+
+		<div class="w3layouts_header_right">
+			<div class="detail-w3l">
+				<ul>
+					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +569 6502 1783</li>
+				</ul>
+			</div>
+		</div>
+		<div class="w3layouts_header_left">
+			<ul>
+				<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user"
+							aria-hidden="true"></i>Iniciar sesion</a></li>
+
+			</ul>
+
+		</div>
+		<div class="agileits-social top_content">
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-rss"></i></a></li>
+				<li><a href="#"><i class="fa fa-vk"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="clearfix"> </div>
+	</div>
+
+	<div class="banner">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="index.html"><span><i class="fa fa-car"
+								aria-hidden="true"></i></span>MECANICA MCQUEEN</a></h1>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav class="link-effect-2" id="link-effect-2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span data-hover="Menu">Menu</span></a></li>
+						<li><a href="about.html"><span data-hover="Acerca de nosotros">Acerca de nosotros</span></a>
+						</li>
+						<li><a href="contact.html"><span data-hover="Contactanos!">Contactanos</span></a></li>
+						<li><a href="Carrito.html"><span data-hover="Productos!">Productos</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			
+		</nav>
+	</div>
+	<div id="exampleSlider">
+		<div>
+			<h3>Ofrecemos los mejores<span>SERVICIOS </span></h3>
+		</div>
+		<div>
+			<h3>Los mejores mecanicos del <span>PAIS</span></h3>
+		</div>
+		<div>
+			<h3>Ofrecemos el mejor trato hacia el<span>CLIENTE</span></h3>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="signin-form profile">
+						<h3 class="agileinfo_sign">INICIAR SESION</h3>
+						<div class="login-form">
+							<form action="AdminView.html" method="post" onclick="login();">
+								<input type="email" name="email" id="email" placeholder="E-mail" required="">
+								<input type="password" name="password" id="password" placeholder="Password" required="">
+								<div class="tp">
+									<input type="submit" value="Iniciar sesion" onclick="login();">
+								</div>
+							</form>
+						</div>
+						<div class="login-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+						<p><a href="#" data-toggle="modal" data-target="#myModal3"> No tienes cuenta?</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="w3-about-us">
+		<div class="container">
+			<div class="w3-headings-all">
+				<h3>Bienvenidos a la mejor mecanica de CHILE</h3>
+			</div>
+			<div class="w3-about-text">
+				<p>Mecanica Mcqueen es conocida como una de las mejores mecanicas y unas de las
+					más reconocidas del barrio Diez de Julio en inyección Diesel y Bencinero.
+					También somos especialistas en Reparación y Carga de Aire acondicionado para Vehículos.</p>
+			</div>
+			<div class="w3-about-all-grid">
+				<div class="col-md-6 w3-about-grid-left">
+					<ul>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Paquetes exclusivos para clientes frecuentes</h3>
+						</li>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Bajos costos
+							</h3>
+						</li>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Pagos via internet o presencial</h3>
+						</li>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Paquetes de reparacion personalizados</h3>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 w3-about-grid-right">
+					<ul>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Mecanicos de alto calibre</h3>
+						</li>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Reparacion de cualquier tipo
+							</h3>
+						</li>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Scanner Automotriz</h3>
+						</li>
+						<li>
+							<h3><span><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>Aire para las ruedas</h3>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+
+			<div class="events">
+
+				<div class="col-md-6 w3layouts_event_grid">
+					<div class="w3_agile_event_grid1">
+						<img src="images/ab1.jpg" alt=" " class="img-responsive" />
+						<div class="w3_agile_event_grid1_pos">
+							<p>31 de mayo del 2022</p>
+						</div>
+						<div class="agile_event_grid1_pos">
+							<ul>
+								<li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>18</a></li>
+								<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>21</a></li>
+								<li><a href="#"><i class="fa fa-share" aria-hidden="true"></i>13</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="agileits_w3layouts_event_grid1">
+						<h5><a href="#" data-toggle="modal" data-target="#myModal">Ultimos trabajos realizados</a></h5>
+						<p>Cambio de aceite a un Mercedes-Benz Clase E</p>
+					</div>
+				</div>
+
+
+				<div class="col-md-6 w3layouts_event_grid">
+					<div class="w3_agile_event_grid1">
+						<img src="images/ab2.jpg" alt=" " class="img-responsive" />
+						<div class="w3_agile_event_grid1_pos">
+							<p>31 de mayo del 2022</p>
+						</div>
+						<div class="agile_event_grid1_pos">
+							<ul>
+								<li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>18</a></li>
+								<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>21</a></li>
+								<li><a href="#"><i class="fa fa-share" aria-hidden="true"></i>13</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="agileits_w3layouts_event_grid1">
+						<h5><a href="#" data-toggle="modal" data-target="#myModal">Ultimos trabajos realizados</a></h5>
+						<p>Cambio de motor a el vehiculo Ford Taurus</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+
+				<div class="col-md-6 w3layouts_event_grid">
+					<div class="w3_agile_event_grid1">
+						<img src="images/ab3.jpg" alt=" " class="img-responsive" />
+						<div class="w3_agile_event_grid1_pos">
+							<p>2 de junio del 2022</p>
+						</div>
+						<div class="agile_event_grid1_pos">
+							<ul>
+								<li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>18</a></li>
+								<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>21</a></li>
+								<li><a href="#"><i class="fa fa-share" aria-hidden="true"></i>13</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="agileits_w3layouts_event_grid1">
+						<h5><a href="#" data-toggle="modal" data-target="#myModal"> Ultimos trabajos realizadoss</a></h5>
+						<p>Cambio de aceite a vHyundai Grandeur</p>
+					</div>
+				</div>
+
+
+				<div class="col-md-6 w3layouts_event_grid">
+					<div class="w3_agile_event_grid1">
+						<img src="images/ab4.jpg" alt=" " class="img-responsive" />
+						<div class="w3_agile_event_grid1_pos">
+							<p>04 de Junio del 2022</p>
+						</div>
+						<div class="agile_event_grid1_pos">
+							<ul>
+								<li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>18</a></li>
+								<li><a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>21</a></li>
+								<li><a href="#"><i class="fa fa-share" aria-hidden="true"></i>13</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="agileits_w3layouts_event_grid1">
+						<h5><a href="#" data-toggle="modal" data-target="#myModal">Ultimos trabajos realizadoss </a></h5>
+						<p>Cambio de motor y cambio de aceite a Toyota Crown</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-agile-services">
+		<div class="container">
+			<div class="w3-headings-all">
+				<h3>Servicios</h3>
+			</div>
+			<div class="agileits-services">
+				<div class="services-right-grids">
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="fa fa-car" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Reparacion de cualquier tipo de automovil </h5>
+							<p>Reparamos al mejor coste, Ajustamos tu motor, Reparamos diferenciales, cambiamos aceites y muchas cosas mas.</p>
+							<h4><a href="#" data-toggle="modal" data-target="#myModal11">Leer mas</a></h4>
+						</div>
+					</div>
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="fa fa-subway" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Pinturas de Automovil</h5>
+							<p>Pintamos con pintura de alta calidad tu vehiculo.</p>
+							<h4><a href="#" data-toggle="modal" data-target="#myModal22">Leer mas</a></h4>
+						</div>
+					</div>
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="fa fa-ship" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Importacion productos originales</h5>
+							<p>Aparte de reparar tambien importamos los mejores productos para tu vehiculo.</p>
+							<h4><a href="#" data-toggle="modal" data-target="#myModal33">Leer mas</a></h4>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal about-modal fade" id="myModal11" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"> REPARACION DE AUTOMOVILES</h4>
+				</div>
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/m1.jpg" alt="" />
+						<p>Reparamos automoviles de cualquier tipo de gama sea gama alta o gama baja, todo esto es gracias a nuestros profesionales de alto calibre.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal about-modal fade" id="myModal22" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"> PINTURA AUTMOVILES</h4>
+				</div>
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/m2.jpg" alt="" />
+						<p>Pintamos automoviles con las mejores pinturas.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal about-modal fade" id="myModal33" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span1"
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"> IMPORTACION DE PRODUCTOS PARA AUTOMOVILES</h4>
+				</div>
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/m3.jpg" alt="" />
+						<p>En nuestra mecanica tambien podras comprar productos para tu automovil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="w3-advantages" id="advantages">
+		<div class="container">
+			<div class="w3-headings-all">
+				<h3>ULTIMAS NOVEDADES</h3>
+			</div>
+			<div class="w3-adv-grids">
+				<div class="col-md-6 w3-adv-left1">
+					<div class="w3-adv-lef1-text">
+						<h3>Premio a el mejor servicio </h3>
+						<p>2020-2022</p>
+					</div>
+					<div class="w3-adv-lef1-text2">
+						<p><span>"</span>Gracias al esfuerzo de nuestros mecanicos y nuestro equipo de trabajo nos alegra informar de que tenemos el premio al mejor servicio del año 2020,2021 y 2022<span>"</span></p>
+						<p><span></span><span></span></p>
+						<h4>TODO ESTO ES GRACIAS A USTEDES!</h4>
+					</div>
+				</div>
+				<div class="col-md-6 w3-adv-right1">
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-6 w3-adv-left2">
+				</div>
+				<div class="col-md-6 w3-adv-right2">
+					<div class="w3-adv-right2-text">
+						<h3>LLEGO EL MEJOR SHAMPOO PARA TU AUTO</h3>
+						<p>SNOW FOAM </p>
+					</div>
+					<div class="w3-adv-right2-text-para">
+						<p>Para que tu auto no le falte nunca el brillo llego el mejor shampoo del mercado para tu auto.</p>
+					</div>
+					<div class="w3-adv-right2-icons">
+						<p><i class="fa fa-plane" aria-hidden="true"></i>Importado desde el PERU para CHILE</p>
+						<p><i class="fa fa-sitemap" aria-hidden="true"></i>Este producto solamente este en la mecanica McQueen</p>
+						<p><i class="fa fa-crosshairs" aria-hidden="true"></i>Producto exclusivo</p>
+						<p><i class="fa fa-globe" aria-hidden="true"></i>Solamente en chile y en el PERU</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="subscribe">
+		<div class="container">
+			<div class=" col-md-6 agileits-title">
+				<h6>- SUSCRIBETE A </h6>
+				<h3>MECANICA MCQUEEN</h3>
+			</div>
+			<div class=" col-md-6 agileits-title-right">
+				<form action="#" method="post">
+					<input type="email" name="email" placeholder="Ingresa tu correo" required="">
+					<input type="submit" value="Subscribe">
+				</form>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-footer-contact">
+		<div class="container">
+			<div class="col-md-4 w3-footer-contact-left">
+				<h3>Mejor mecanico del mes</h3>
+				<p>El mejor mecanico del mes fue :  
+					FEDERICO CRISTALINO su cargo era cambiar aceite, cambio de motor y pintado de Automoviles</p>
+			</div>
+			<div class="col-md-4 w3-footer-contact-middle">
+				<img src="images/v1.jpg" alt="img">
+			</div>
+			<div class="col-md-4 w3-footer-contact-right">
+				<div class="col-md-2 w3-footer-contact-icon1">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+				</div>
+				<div class="col-md-10 w3-footer-contact-info">
+					<p>Ubicacion de la mecanica McQueen:</p>
+					<h4>Antonio Varas #666, Providencia</h4>
+
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-2 w3-footer-contact-icon1">
+					<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+				</div>
+				<div class="col-md-10 w3-footer-contact-info">
+					<p>Llamalo:</p>
+					<h4>+569 6502 1782</h4>
+
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-2 w3-footer-contact-icon1">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</div>
+				<div class="col-md-10 w3-footer-contact-info">
+					<p>Correo electronico:</p>
+					<h4><a href="mailto:example@mail.com"> Federico@duocuc.cl</a></h4>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+
+			<div class="team gallery-ban" id="team">
+
+				<ul id="flexiselDemo1">
+					<li>
+						<div class="wthree_testimonials_grid_main">
+
+							<img src="images/f1.png" alt=" " class="img-responsive" />
+
+						</div>
+					</li>
+					<li>
+						<div class="wthree_testimonials_grid_main">
+
+							<img src="images/f2.png" alt=" " class="img-responsive" />
+
+						</div>
+					</li>
+					<li>
+						<div class="wthree_testimonials_grid_main">
+
+							<img src="images/f3.png" alt=" " class="img-responsive" />
+
+						</div>
+					</li>
+					<li>
+						<div class="wthree_testimonials_grid_main">
+
+							<img src="images/f51.png" alt=" " class="img-responsive" />
+
+						</div>
+					</li>
+					<li>
+						<div class="wthree_testimonials_grid_main">
+
+							<img src="images/f5.png" alt=" " class="img-responsive" />
+
+						</div>
+					</li>
+					<li>
+						<div class="wthree_testimonials_grid_main">
+
+							<img src="images/f6.png" alt=" " class="img-responsive" />
+
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer-final">
+		<div class="copyw3-agile">
+			<div class="container">
+				<p>&copy; 2022 Mecanica McQueen Todos los derechos de autor reservados | Diseñado por  <a href="www.instagram.com/dantexzxl">MECANICA MCQUEEN</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/mainScript.js"></script>
+	<script src="js/rgbSlide.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 4,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
+				}
+			});
+
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
