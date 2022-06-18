@@ -7,6 +7,12 @@ from django.contrib import messages
 def home(request):
     return render(request, 'core/index.html')
 
+def contacto(request):
+    return render(request, 'core/contact.html')
+
+def about(request):
+    return render(request, 'core/about.html')
+
 def AdminView(request):
     return render(request, 'core/AdminView.html')
 

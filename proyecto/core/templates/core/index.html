@@ -1,106 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>Mecanica McQueen</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Trucking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link rel="stylesheet" href="css/mainStyles.css" />
-	<link rel='stylesheet' href='css/dscountdown.css' type='text/css' media='all' />
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-	<link href="css/lsb.css" rel="stylesheet" type="text/css">
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-		rel="stylesheet">
-	<link
-		href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-		rel="stylesheet">
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<script>
-		function login(){
-			var email, password;
-
-			email  = document.getElementById("email").value;
-			password = document.getElementById("password").value;
-			
-			if (email == "admin@admin.cl" && password == "123123"){
-				windows.location = "adminview.html";
-			}
-		}
-	</script>
-</head>
-
-<body>
-	<div class="header">
-
-		<div class="w3layouts_header_right">
-			<div class="detail-w3l">
-				<ul>
-					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +569 6502 1783</li>
-				</ul>
-			</div>
-		</div>
-		<div class="w3layouts_header_left">
-			<ul>
-				<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user"
-							aria-hidden="true"></i>Iniciar sesion</a></li>
-
-			</ul>
-
-		</div>
-		<div class="agileits-social top_content">
-			<ul>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-rss"></i></a></li>
-				<li><a href="#"><i class="fa fa-vk"></i></a></li>
-			</ul>
-		</div>
-
-		<div class="clearfix"> </div>
-	</div>
-
-	<div class="banner">
-		<nav class="navbar navbar-default">
-			<div class="navbar-header navbar-left">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<h1><a class="navbar-brand" href="index.html"><span><i class="fa fa-car"
-								aria-hidden="true"></i></span>MECANICA MCQUEEN</a></h1>
-			</div>
-			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-				<nav class="link-effect-2" id="link-effect-2">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span data-hover="Menu">Menu</span></a></li>
-						<li><a href="about.html"><span data-hover="Acerca de nosotros">Acerca de nosotros</span></a>
-						</li>
-						<li><a href="contact.html"><span data-hover="Contactanos!">Contactanos</span></a></li>
-						<li><a href="Carrito.html"><span data-hover="Productos!">Productos</span></a></li>
-					</ul>
-				</nav>
-			</div>
-			
-		</nav>
-	</div>
+{% load static %}
+{% include "./header.html" %}
 	<div id="exampleSlider">
 		<div>
 			<h3>Ofrecemos los mejores<span>SERVICIOS </span></h3>
@@ -111,39 +10,7 @@
 		<div>
 			<h3>Ofrecemos el mejor trato hacia el<span>CLIENTE</span></h3>
 		</div>
-	</div>
-
-
-	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<div class="signin-form profile">
-						<h3 class="agileinfo_sign">INICIAR SESION</h3>
-						<div class="login-form">
-							<form action="AdminView.html" method="post" onclick="login();">
-								<input type="email" name="email" id="email" placeholder="E-mail" required="">
-								<input type="password" name="password" id="password" placeholder="Password" required="">
-								<div class="tp">
-									<input type="submit" value="Iniciar sesion" onclick="login();">
-								</div>
-							</form>
-						</div>
-						<div class="login-social-grids">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							</ul>
-						</div>
-						<p><a href="#" data-toggle="modal" data-target="#myModal3"> No tienes cuenta?</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	</div>s
 
 	<div class="w3-about-us">
 		<div class="container">
@@ -198,7 +65,7 @@
 
 				<div class="col-md-6 w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/ab1.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'core/images/ab1.jpg' %}" alt=" " class="img-responsive" />
 						<div class="w3_agile_event_grid1_pos">
 							<p>31 de mayo del 2022</p>
 						</div>
@@ -219,7 +86,7 @@
 
 				<div class="col-md-6 w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/ab2.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'core/images/ab2.jpg' %}" alt=" " class="img-responsive" />
 						<div class="w3_agile_event_grid1_pos">
 							<p>31 de mayo del 2022</p>
 						</div>
@@ -241,7 +108,7 @@
 
 				<div class="col-md-6 w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/ab3.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'core/images/ab3.jpg' %}" alt=" " class="img-responsive" />
 						<div class="w3_agile_event_grid1_pos">
 							<p>2 de junio del 2022</p>
 						</div>
@@ -262,7 +129,7 @@
 
 				<div class="col-md-6 w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/ab4.jpg" alt=" " class="img-responsive" />
+						<img src="{% static 'core/images/ab4.jpg' %}" alt=" " class="img-responsive" />
 						<div class="w3_agile_event_grid1_pos">
 							<p>04 de Junio del 2022</p>
 						</div>
@@ -338,7 +205,7 @@
 				</div>
 				<div class="modal-body">
 					<div class="agileits-w3layouts-info">
-						<img src="images/m1.jpg" alt="" />
+						<img src="{% static 'core/images/m1.jpg' %}" alt="" />
 						<p>Reparamos automoviles de cualquier tipo de gama sea gama alta o gama baja, todo esto es gracias a nuestros profesionales de alto calibre.</p>
 					</div>
 				</div>
@@ -356,7 +223,7 @@
 				</div>
 				<div class="modal-body">
 					<div class="agileits-w3layouts-info">
-						<img src="images/m2.jpg" alt="" />
+						<img src="{% static 'core/images/m2.jpg' %}" alt="" />
 						<p>Pintamos automoviles con las mejores pinturas.</p>
 					</div>
 				</div>
@@ -374,7 +241,7 @@
 				</div>
 				<div class="modal-body">
 					<div class="agileits-w3layouts-info">
-						<img src="images/m3.jpg" alt="" />
+						<img src="{% static 'core/images/m3.jpg' %}" alt="" />
 						<p>En nuestra mecanica tambien podras comprar productos para tu automovil.</p>
 					</div>
 				</div>
@@ -449,7 +316,7 @@
 					FEDERICO CRISTALINO su cargo era cambiar aceite, cambio de motor y pintado de Automoviles</p>
 			</div>
 			<div class="col-md-4 w3-footer-contact-middle">
-				<img src="images/v1.jpg" alt="img">
+				<img src="{% static 'core/images/v1.jpg' %}" alt="img">
 			</div>
 			<div class="col-md-4 w3-footer-contact-right">
 				<div class="col-md-2 w3-footer-contact-icon1">
@@ -488,42 +355,42 @@
 					<li>
 						<div class="wthree_testimonials_grid_main">
 
-							<img src="images/f1.png" alt=" " class="img-responsive" />
+							<img src="{% static 'core/images/f1.png' %}" alt=" " class="img-responsive" />
 
 						</div>
 					</li>
 					<li>
 						<div class="wthree_testimonials_grid_main">
 
-							<img src="images/f2.png" alt=" " class="img-responsive" />
+							<img src="{% static 'core/images/f2.png' %}" alt=" " class="img-responsive" />
 
 						</div>
 					</li>
 					<li>
 						<div class="wthree_testimonials_grid_main">
 
-							<img src="images/f3.png" alt=" " class="img-responsive" />
+							<img src="{% static 'core/images/f3.png' %}" alt=" " class="img-responsive" />
 
 						</div>
 					</li>
 					<li>
 						<div class="wthree_testimonials_grid_main">
 
-							<img src="images/f51.png" alt=" " class="img-responsive" />
+							<img src="{% static 'core/images/f51.png' %}" alt=" " class="img-responsive" />
 
 						</div>
 					</li>
 					<li>
 						<div class="wthree_testimonials_grid_main">
 
-							<img src="images/f5.png" alt=" " class="img-responsive" />
+							<img src="{% static 'core/images/f5.png' %}" alt=" " class="img-responsive" />
 
 						</div>
 					</li>
 					<li>
 						<div class="wthree_testimonials_grid_main">
 
-							<img src="images/f6.png" alt=" " class="img-responsive" />
+							<img src="{% static 'core/images/f6.png' %}" alt=" " class="img-responsive" />
 
 						</div>
 					</li>
@@ -534,57 +401,4 @@
 
 	</div>
 
-	<div class="footer-final">
-		<div class="copyw3-agile">
-			<div class="container">
-				<p>&copy; 2022 Mecanica McQueen Todos los derechos de autor reservados | Diseñado por  <a href="www.instagram.com/dantexzxl">MECANICA MCQUEEN</a>
-				</p>
-			</div>
-		</div>
-	</div>
-
-
-	<script src="js/mainScript.js"></script>
-	<script src="js/rgbSlide.min.js"></script>
-	<script type="text/javascript">
-		$(window).load(function () {
-			$("#flexiselDemo1").flexisel({
-				visibleItems: 4,
-				animationSpeed: 1000,
-				autoPlay: true,
-				autoPlaySpeed: 3000,
-				pauseOnHover: true,
-				enableResponsiveBreakpoints: true,
-				responsiveBreakpoints: {
-					portrait: {
-						changePoint: 480,
-						visibleItems: 1
-					},
-					landscape: {
-						changePoint: 640,
-						visibleItems: 2
-					},
-					tablet: {
-						changePoint: 768,
-						visibleItems: 3
-					}
-				}
-			});
-
-		});
-	</script>
-	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<script src="js/SmoothScroll.min.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script src="js/bootstrap.js"></script>
-</body>
-
-</html>
+	{% include "./footer.html" %}
