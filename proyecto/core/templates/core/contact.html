@@ -70,11 +70,11 @@
 
 				</div>
 				<div class="col-md-7 contact-form">
-					<form action="/registarContacto/" method="POST">{% csrf_token %}
-						<input type="text" id="txtNombre" name="Name" placeholder="Nombre" required="">
-						<input class="email" id="txtEmail" type="email" name="Correo electronico" placeholder="Email" required="">
-						<textarea placeholder="Message" id="txtMensaje" name="Mensaje" required=""></textarea>
-						<input type="submit" value="SUBMIT">
+					<form action="/registrarContacto/" method="POST">{% csrf_token %}
+						<input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre" required>
+						<input class="email" id="txtEmail" type="email" name="txtEmail" placeholder="Email" required>
+						<textarea placeholder="Message" id="txtMensaje" name="txtMensaje" required></textarea>
+						<input type="submit" value="Enviar">
 					</form>
 				</div>
 				<div class="clearfix"> </div>
